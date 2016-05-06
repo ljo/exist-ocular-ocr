@@ -1,0 +1,6 @@
+AGaramond
+Andron Freefont LAT
+TeX Gyre Pagella
+TeX Gyre Pagella Italic
+URW Palladio L
+URW Palladio L Italic
