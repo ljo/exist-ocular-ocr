@@ -68,11 +68,11 @@ import org.exist.storage.txn.TransactionManager;
 import org.exist.storage.txn.Txn;
 import org.exist.util.LockException;
 import org.exist.util.MimeType;
+import org.exist.util.ParametersExtractor;
 import org.exist.util.VirtualTempFile;
 import org.exist.util.io.Resource;
 import org.exist.xmldb.XmldbURI;
 import org.exist.xquery.*;
-import org.exist.xquery.modules.ModuleUtils;
 import org.exist.xquery.value.*;
 
 import org.xml.sax.SAXException;
@@ -144,7 +144,7 @@ public class InitializeFont extends BasicFunction {
 	outputFontPath = args[1].getStringValue();
 
 	if (!args[2].isEmpty()) {
-	    parameters = ModuleUtils.parseParameters(((NodeValue)args[2].itemAt(0)).getNode());
+	    parameters = ParametersExtractor.parseParameters(((NodeValue)args[2].itemAt(0)).getNode());
 	}
         
         for (String property : parameters.stringPropertyNames()) {
