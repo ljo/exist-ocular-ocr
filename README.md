@@ -15,16 +15,20 @@ Demo and documentation are included in the package.
 
 ## Functions
 
-There are four main steps, where one step maps to one function (except for ocr:initialize-language-model-* which can take strings and nodes, or a collection tree) and one optional:
+There are four main steps, where one step maps to one function (except for `ocr:initialize-language-model-*` which can take strings and nodes, or a collection tree) and one optional:
+
+```xquery
 ocr:initialize-language-model-string($language-model, $text, $config)
 ocr:initialize-language-model-collection($language-model, $collection, $qname, $config)
 ocr:initialize-font($language-model, $font, $config)
+```
 
 Optionally generating a glyph substitution model:
+```xquery
 ocr:initialize-glyph-substitution-model($language-model, $init-gsm, $config)
-
 ocr:train-font($language-model, $init-font, $input-path, $trained-font, $config)
 ocr:transcribe($language-model,$trained-font, $input-path, $output-path, $retrained-language-model, $config)
+```
 
 Extended documentation can be found after installing the package.
 
