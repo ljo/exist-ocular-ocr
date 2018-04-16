@@ -80,7 +80,6 @@ import org.exist.storage.txn.Txn;
 import org.exist.util.LockException;
 import org.exist.util.MimeType;
 import org.exist.util.ParametersExtractor;
-import org.exist.util.VirtualTempFile;
 import org.exist.util.io.Resource;
 import org.exist.xmldb.XmldbURI;
 import org.exist.xquery.*;
